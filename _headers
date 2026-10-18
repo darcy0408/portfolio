@@ -1,0 +1,3 @@
+# Read by Cloudflare Pages and Netlify. Every response says noindex, on top of the tag in the pages themselves.
+/*
+  X-Robots-Tag: noindex
