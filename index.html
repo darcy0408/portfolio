@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Darcy Van Pelt · Software Engineer &amp; CS Researcher</title>
-  <meta name="description" content="Darcy Van Pelt, software engineer and CS researcher. Agent-based traffic modeling at Portland State, a storytelling app for kids, ACM SIGSPATIAL 2026 author. Java, TypeScript, Python." />
+  <meta name="description" content="Darcy Van Pelt, software engineer and CS researcher. Agent-based traffic modeling at Portland State, a storytelling app for kids, ACM SIGSPATIAL 2026 author. Python, TypeScript, Java." />
   <meta property="og:title" content="Darcy Van Pelt · Software Engineer &amp; CS Researcher" />
   <meta property="og:description" content="Software engineer and CS researcher. I build models that answer real questions, and the software around them." />
   <meta property="og:type" content="website" />
@@ -80,12 +80,12 @@
         </h1>
         <p class="hero-role" aria-live="polite">
           <span class="hero-role-prefix">&gt;</span>
-          <span class="typed" data-words='["Software engineer","CS researcher","Java · TypeScript · Python"]'>Software engineer</span><span class="typing-cursor" aria-hidden="true"></span>
+          <span class="typed" data-words='["Software engineer","CS researcher","Python · TypeScript · Java"]'>Software engineer</span><span class="typing-cursor" aria-hidden="true"></span>
         </p>
         <p class="hero-description">
           I build models that answer real questions, and the software around them.
           Creator of <strong>Once Upon YOUR Child</strong>, NSF REU researcher, and
-          author of a paper accepted to the <a href="#research">ACM SIGSPATIAL 2026 Student Research Competition</a>.
+          author of a research abstract accepted to the <a href="#research">2026 ACM SIGSPATIAL Student Research Competition</a> (undergraduate track).
         </p>
         <div class="hero-actions">
           <a class="hero-button hero-button-primary" href="#projects">View projects →</a>
@@ -112,7 +112,7 @@
             <pre class="terminal-body"><span class="t-prompt">$</span> whoami
 <span class="t-out">darcy — CS student · engineer · researcher</span>
 <span class="t-prompt">$</span> cat stack.txt
-<span class="t-out">Java 26 · TypeScript · Python · Flutter · PostgreSQL</span>
+<span class="t-out">Python · TypeScript · Java 26 · Flutter · PostgreSQL</span>
 <span class="t-prompt">$</span> cat research.txt
 <span class="t-out">agent-based models · NO2 · noise · street closures</span>
 <span class="t-prompt">$</span> cat ./cat
@@ -133,22 +133,17 @@
           <p>
             Two things right now. I'm an undergraduate research fellow on Portland State's
             Computational Modeling REU, where I built an agent-based model of Portland's street
-            network that produces per-segment NO<sub>2</sub> and noise surfaces. Close one arterial in the
+            network that produces per-segment NO<sub>2</sub> emission and noise estimates. Close one arterial in the
             model and you can see exactly which parallel streets absorb the traffic and the
             pollution, before the lane closes rather than after.
           </p>
           <p>
             The other is <a href="https://onceuponyourchild.app" target="_blank" rel="noopener">Once Upon YOUR Child</a>,
             an AI storytelling app for kids that I designed and built under my own LLC:
-            Flutter on the front, Flask, Celery, and Redis on the back, COPPA-compliant parental
-            consent throughout. One feature explains the rest: I built a limerick mode because I
+            Flutter on the front, Flask, Celery, and Redis on the back, a parental-consent flow designed
+            around COPPA. One feature explains the rest: I built a limerick mode because I
             know an eight-year-old who can't read and refuses anything that looks like a baby book.
             She'll read something she's the hero of.
-          </p>
-          <p>
-            I'm a disabled, nontraditional student, and my family's experience navigating chronic
-            illness showed me how often systems manage problems without solving them. That's a
-            large part of why I build what I build.
           </p>
         </div>
 
@@ -192,13 +187,13 @@
             <h3 class="timeline-role">Undergraduate Research Fellow, NSF REU</h3>
             <p class="timeline-org">Portland State University · Computational Modeling Serving Portland · remote</p>
             <p class="timeline-desc">
-              Built an agent-based traffic simulation that produces street-level NO<sub>2</sub> and noise on a
-              159,000-segment network, checked against held-out traffic counts (rank correlation 0.59). Multi-seed experiments on
+              Built an agent-based traffic simulation that produces street-level NO<sub>2</sub> emission and noise estimates on a
+              159,000-segment network, checked against observed traffic counts on 356 matched segments (rank correlation 0.59). Multi-seed experiments on
               the university's Slurm cluster with pinned seeds and checkpoint/resume.
             </p>
           </li>
           <li class="timeline-item reveal">
-            <p class="timeline-date">May 2026 – Present</p>
+            <p class="timeline-date">Nov 2025 – Present</p>
             <h3 class="timeline-role">Founder &amp; Sole Engineer</h3>
             <p class="timeline-org">Once Upon YOUR Child LLC</p>
             <p class="timeline-desc">
@@ -279,7 +274,7 @@
             <h3 class="project-card-title">Portland Traffic ABM</h3>
             <p class="project-card-description">
               Agent-based traffic simulation over Portland's street network with car-following, signal queueing, and
-              shortest-path rerouting, producing per-segment NO<sub>2</sub> and noise surfaces. Checked against held-out counts;
+              shortest-path rerouting, producing per-segment NO<sub>2</sub> emission and noise estimates. Checked against observed counts on 356 matched segments;
               multi-seed runs on a Slurm cluster. NSF REU at Portland State.
             </p>
             <ul class="project-card-stack clean-list">
@@ -402,7 +397,7 @@
       <p class="section-label reveal">Research</p>
       <h2 class="section-heading reveal">Close a street, and <span>the pollution moves</span></h2>
       <nav class="research-links reveal" aria-label="Research links">
-        <a href="#publications">Paper: accepted, DOI pending</a>
+        <a href="#publications">Abstract: accepted, DOI pending</a>
         <a href="https://github.com/darcy0408/portland-traffic-abm" target="_blank" rel="noopener">Code on GitHub ↗</a>
         <a href="https://pdxscholar.library.pdx.edu/altreu_projects/19/" target="_blank" rel="noopener">Chapter on PDXScholar ↗</a>
         <a href="https://darcy0408.github.io/portland-traffic-abm/rosequarter/" target="_blank" rel="noopener">Preregistration ↗</a>
@@ -411,21 +406,21 @@
       <div class="finding split">
         <figure class="finding-figure reveal">
           <img src="assets/closure-diff.webp" width="820" height="814" loading="lazy"
-               alt="Street map of southeast Portland. The closed section of SE Powell is yellow. Powell is blue where its NO2 fell. Parallel streets to the north and south are red where their NO2 rose." />
+               alt="Street map of southeast Portland. The closed section of SE Powell is yellow. Powell is blue where its estimated NO2 emissions fell. Parallel streets to the north and south are red where their estimated NO2 emissions rose." />
           <figcaption>
             <span class="legend"><i class="swatch swatch--closed"></i>closed section</span>
-            <span class="legend"><i class="swatch swatch--down"></i><span>NO<sub>2</sub> fell</span></span>
-            <span class="legend"><i class="swatch swatch--up"></i><span>NO<sub>2</sub> rose</span></span>
-            <span class="finding-caption">Modeled change in NO<sub>2</sub> when a section of SE Powell closes. Powell-corridor network, one representative run.</span>
+            <span class="legend"><i class="swatch swatch--down"></i><span>estimated NO<sub>2</sub> emissions fell</span></span>
+            <span class="legend"><i class="swatch swatch--up"></i><span>estimated NO<sub>2</sub> emissions rose</span></span>
+            <span class="finding-caption">Modeled change in NO<sub>2</sub> emissions when a section of SE Powell closes. Powell-corridor network, one representative run.</span>
           </figcaption>
         </figure>
 
         <div class="finding-text">
-          <p class="finding-stat reveal"><b>61–76%</b><span>average NO<sub>2</sub> drop on a closed arterial, across three arterials and 12 random seeds</span></p>
-          <p class="finding-stat reveal"><b>12/12</b><span>seeds where NO<sub>2</sub> rose on both parallel detours when SE Powell closed</span></p>
+          <p class="finding-stat reveal"><b>61–76%</b><span>average drop in estimated NO<sub>2</sub> emissions on a closed arterial, across three arterials and 12 random seeds</span></p>
+          <p class="finding-stat reveal"><b>12/12</b><span>seeds where estimated NO<sub>2</sub> emissions rose on both parallel detours when SE Powell closed</span></p>
           <p class="finding-body reveal">
             The traffic doesn't disappear when a street closes. It reroutes, and the pollution goes with it.
-            In the model, SE Division and SE Holgate picked up about 32 and 42 percent more NO<sub>2</sub> on
+            In the model, SE Division and SE Holgate picked up about 32 and 42 percent more estimated NO<sub>2</sub> emissions on
             average. That's the kind of thing a transportation planner wants to know before the lane closes
             rather than after.
           </p>
@@ -449,7 +444,7 @@
             <li>
               <b>Van Pelt, D.</b>, Anderson, N., &amp; Teuscher, C. "When Roads Close, Pollution Moves: Agent-Based
               Modeling of Street-Level NO<sub>2</sub> and Noise Redistribution in Portland." Chapter in
-              <i>Summer Proceedings 2026</i>, Portland State University NSF REU, pp. 317–337.
+              <i>Summer Proceedings 2026</i>, Portland State University NSF REU, ISBN 9798160005515, pp. 317–337.
               <a href="https://pdxscholar.library.pdx.edu/altreu_projects/19/" target="_blank" rel="noopener">PDXScholar ↗</a>
             </li>
           </ol>
@@ -500,7 +495,7 @@
               <div class="skills-category">
                 <p class="skills-category-label">Languages</p>
                 <ul class="skills-pills clean-list">
-                  <li>Java</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>Dart</li>
+                  <li>Python</li><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>SQL</li><li>Dart</li>
                 </ul>
               </div>
               <div class="skills-category">
@@ -549,7 +544,7 @@
                 <div class="skills-icon" aria-hidden="true">✎</div>
                 <div class="skills-soft-content">
                   <h3>Write it down</h3>
-                  <p>A SIGSPATIAL paper, an REU proceedings chapter, Ignite talk at the PSU research symposium, and READMEs that explain the one rule the structure enforces.</p>
+                  <p>A SIGSPATIAL research abstract, an REU proceedings chapter, Ignite talk at the PSU research symposium, and READMEs that explain the one rule the structure enforces.</p>
                 </div>
               </div>
             </div>
@@ -639,10 +634,10 @@
         <div class="footer-stats">
           <div class="footer-stat"><span class="footer-stat-value">159k</span><span class="footer-stat-label">street-graph edges
 simulated</span></div>
-          <div class="footer-stat"><span class="footer-stat-value">61–76%</span><span class="footer-stat-label">NO<sub>2</sub> drop on a
-closed arterial</span></div>
-          <div class="footer-stat"><span class="footer-stat-value">2</span><span class="footer-stat-label">papers in 2026: chapter
-published, abstract accepted</span></div>
+          <div class="footer-stat"><span class="footer-stat-value">61–76%</span><span class="footer-stat-label">drop in estimated NO<sub>2</sub>
+emissions, closed arterial</span></div>
+          <div class="footer-stat"><span class="footer-stat-value">2</span><span class="footer-stat-label">in 2026: chapter published,
+abstract accepted</span></div>
           <div class="footer-stat"><span class="footer-stat-value">3.97</span><span class="footer-stat-label">GPA
 CS · AI &amp; Robotics</span></div>
         </div>
