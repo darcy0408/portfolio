@@ -38,6 +38,17 @@ even with noindex on the page. If keeping the source out of search matters, depl
 Vercel, Netlify and Cloudflare Pages all do this free for a personal site and give an address like `darcyvanpelt.vercel.app`.
 The files need no changes either way.
 
+## Where it lives (as of Oct 18 2026)
+
+Live at https://darcyvanpelt.pages.dev/ on Cloudflare Pages, deployed by direct upload from this folder (not Git-connected).
+Source is the PRIVATE repo github.com/darcy0408/portfolio. To publish a change: commit, push, then
+
+```
+npx wrangler@4 pages deploy . --project-name darcyvanpelt --branch main
+```
+
+The older GitHub Pages instructions below are kept for reference.
+
 ## Deploy to GitHub Pages (free, ~2 minutes)
 
 1. Create a public repo named `darcy0408.github.io` on GitHub.
