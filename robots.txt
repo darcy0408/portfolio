@@ -1,0 +1,3 @@
+# Crawling is allowed on purpose: the main page carries a noindex tag, and a crawler has to read the page to see it.
+User-agent: *
+Disallow:

@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Darcy Van Pelt · Software Engineer &amp; CS Researcher</title>
+  <meta name="description" content="Darcy Van Pelt, software engineer and CS researcher. Agent-based traffic modeling at Portland State, a storytelling app for kids, ACM SIGSPATIAL 2026 author. Java, TypeScript, Python." />
+  <meta property="og:title" content="Darcy Van Pelt · Software Engineer &amp; CS Researcher" />
+  <meta property="og:description" content="Software engineer and CS researcher. I build models that answer real questions, and the software around them." />
+  <meta property="og:type" content="website" />
+  <!-- Link previews need absolute URLs. Update these four URLs if the site moves off darcy0408.github.io. -->
+  <meta property="og:url" content="https://darcy0408.github.io/" />
+  <meta property="og:image" content="https://darcy0408.github.io/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Illustration of Darcy Van Pelt at a desk with a laptop, coffee, books and a cat, beside the text: Software engineer and CS researcher" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Darcy Van Pelt · Software Engineer &amp; CS Researcher" />
+  <meta name="twitter:description" content="Software engineer and CS researcher. I build models that answer real questions, and the software around them." />
+  <meta name="twitter:image" content="https://darcy0408.github.io/assets/og-image.jpg" />
+  <!-- Reachable by link only: search engines are told not to list this page. The /sigspatial/ page is the one meant to be found. -->
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://darcy0408.github.io/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2026-10-18" />
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="site-navbar">
+    <div class="navbar-inner">
+      <a class="navbar-logo" href="#top" aria-label="Home"><span class="logo-cat" aria-hidden="true">=^.^=</span> darcy</a>
+
+      <nav class="navbar-links" aria-label="Primary">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#research">Research</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="resume-and-menu">
+        <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <nav class="mobile-navbar-menu" id="mobile-menu" hidden aria-label="Mobile">
+      <a class="mobile-nav-link" href="#about">&gt; About</a>
+      <a class="mobile-nav-link" href="#experience">&gt; Experience</a>
+      <a class="mobile-nav-link" href="#projects">&gt; Projects</a>
+      <a class="mobile-nav-link" href="#research">&gt; Research</a>
+      <a class="mobile-nav-link" href="#skills">&gt; Skills</a>
+      <a class="mobile-nav-link" href="#contact">&gt; Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="page-section hero-section split" id="home">
+      <!-- Full-bleed desk illustration. The left third of the picture is dark on purpose: the text sits there. -->
+      <picture class="hero-bg" aria-hidden="true">
+        <source srcset="assets/hero-desk.webp" type="image/webp" />
+        <img src="assets/hero-desk.jpg" width="1920" height="1081" fetchpriority="high" alt="" />
+      </picture>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="pixel-star pixel-star--a" aria-hidden="true"></div>
+      <div class="pixel-star pixel-star--b" aria-hidden="true"></div>
+      <div class="pixel-star pixel-star--c" aria-hidden="true"></div>
+      <div class="hero-text center-column">
+        <p class="hero-eyebrow">Hi, I'm</p>
+        <h1 class="hero-heading">
+          <span class="hero-heading-first">Darcy</span>
+          <span class="hero-heading-last">Van Pelt</span>
+        </h1>
+        <p class="hero-role" aria-live="polite">
+          <span class="hero-role-prefix">&gt;</span>
+          <span class="typed" data-words='["Software engineer","CS researcher","Java · TypeScript · Python"]'>Software engineer</span><span class="typing-cursor" aria-hidden="true"></span>
+        </p>
+        <p class="hero-description">
+          I build models that answer real questions, and the software around them.
+          Creator of <strong>Once Upon YOUR Child</strong>, NSF REU researcher, and
+          author of a paper accepted to the <a href="#research">ACM SIGSPATIAL 2026 Student Research Competition</a>.
+        </p>
+        <div class="hero-actions">
+          <a class="hero-button hero-button-primary" href="#projects">View projects →</a>
+          <a class="hero-button hero-button-secondary" href="#research">See the research</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/darcy0408" target="_blank" rel="noopener">GitHub</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://www.linkedin.com/in/darcyvanpelt" target="_blank" rel="noopener">LinkedIn</a>
+          <span aria-hidden="true">/</span>
+          <a href="mailto:darcy0408@gmail.com">Email</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="page-section about-section split section-pad" id="about">
+      <div class="about-image center-box reveal" aria-hidden="true">
+        <div class="cat-perch">
+          <span class="pixel-cat" data-cat></span>
+          <div class="terminal about-terminal">
+            <div class="terminal-titlebar"><span>darcy@portfolio: ~</span><span class="terminal-controls">– □ ×</span></div>
+            <pre class="terminal-body"><span class="t-prompt">$</span> whoami
+<span class="t-out">darcy — CS student · engineer · researcher</span>
+<span class="t-prompt">$</span> cat stack.txt
+<span class="t-out">Java 26 · TypeScript · Python · Flutter · PostgreSQL</span>
+<span class="t-prompt">$</span> cat research.txt
+<span class="t-out">agent-based models · NO2 · noise · street closures</span>
+<span class="t-prompt">$</span> cat ./cat
+<span class="t-out">=^.^=  supervising</span>
+<span class="t-prompt">$</span> <span class="typing-cursor"></span></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text center-column">
+        <p class="section-label reveal">About me</p>
+        <h2 class="section-heading reveal">Different projects, <span>same question</span>.</h2>
+        <div class="about-description reveal">
+          <p>
+            What's really going on, and what would actually change it? That's the question
+            behind everything I build.
+          </p>
+          <p>
+            Two things right now. I'm an undergraduate research fellow on Portland State's
+            Computational Modeling REU, where I built an agent-based model of Portland's street
+            network that produces per-segment NO<sub>2</sub> and noise surfaces. Close one arterial in the
+            model and you can see exactly which parallel streets absorb the traffic and the
+            pollution, before the lane closes rather than after.
+          </p>
+          <p>
+            The other is <a href="https://onceuponyourchild.app" target="_blank" rel="noopener">Once Upon YOUR Child</a>,
+            an AI storytelling app for kids that I designed and built under my own LLC:
+            Flutter on the front, Flask, Celery, and Redis on the back, COPPA-compliant parental
+            consent throughout. One feature explains the rest: I built a limerick mode because I
+            know an eight-year-old who can't read and refuses anything that looks like a baby book.
+            She'll read something she's the hero of.
+          </p>
+          <p>
+            I'm a disabled, nontraditional student, and my family's experience navigating chronic
+            illness showed me how often systems manage problems without solving them. That's a
+            large part of why I build what I build.
+          </p>
+        </div>
+
+        <div class="about-details reveal">
+          <div class="about-detail-card">
+            <span>Location</span>
+            <strong>Grand Junction, CO · remote</strong>
+          </div>
+          <div class="about-detail-card">
+            <span>Education</span>
+            <strong>B.S. CS, AI &amp; Robotics · 3.97 GPA</strong>
+          </div>
+          <a class="about-detail-card about-detail-link" href="#research">
+            <span>Research</span>
+            <strong>NSF REU · ACM SIGSPATIAL 2026 ↓</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="page-section experience-section split section-pad" id="experience">
+      <div class="experience-main">
+        <p class="section-label reveal">Experience</p>
+        <h2 class="section-heading reveal">Where I've <span>been building</span></h2>
+
+        <ol class="timeline clean-list">
+          <li class="timeline-item reveal">
+            <p class="timeline-date">Aug 2026 – Oct 2026</p>
+            <h3 class="timeline-role">Preregistered I-5 Closure Study</h3>
+            <p class="timeline-org">Continuing the REU project · with Dr. Christof Teuscher, Portland State · remote</p>
+            <p class="timeline-desc">
+              Banked the model's numeric predictions for the I-5 Rose Quarter closure in a
+              <a href="https://darcy0408.github.io/portland-traffic-abm/rosequarter/" target="_blank" rel="noopener">public preregistration</a>
+              before the closure began. A public travel-time log recorded what happened on 12 frozen routes,
+              so the predictions can be graded against reality. Results are held for the paper.
+            </p>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-date">Jun 2026 – Aug 2026</p>
+            <h3 class="timeline-role">Undergraduate Research Fellow, NSF REU</h3>
+            <p class="timeline-org">Portland State University · Computational Modeling Serving Portland · remote</p>
+            <p class="timeline-desc">
+              Built an agent-based traffic simulation that produces street-level NO<sub>2</sub> and noise on a
+              159,000-segment network, checked against held-out traffic counts (rank correlation 0.59). Multi-seed experiments on
+              the university's Slurm cluster with pinned seeds and checkpoint/resume.
+            </p>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-date">May 2026 – Present</p>
+            <h3 class="timeline-role">Founder &amp; Sole Engineer</h3>
+            <p class="timeline-org">Once Upon YOUR Child LLC</p>
+            <p class="timeline-desc">
+              Designed and built an AI storytelling app for kids: a Flask/PostgreSQL API, Celery workers
+              over Redis, a Flutter client, and Docker images deployed through GitHub Actions with a
+              rollback path.
+            </p>
+          </li>
+          <li class="timeline-item timeline-item--edu reveal">
+            <p class="timeline-date">Expected Mar 2028</p>
+            <h3 class="timeline-role">B.S. Computer Science, AI &amp; Robotics</h3>
+            <p class="timeline-org">Colorado State University Global · GPA 3.97 / 4.0</p>
+          </li>
+        </ol>
+      </div>
+
+      <aside class="experience-side">
+        <div class="awards-card reveal">
+          <p class="awards-label">Awards &amp; honors</p>
+          <ul class="awards-list clean-list">
+            <li><b>ACM SIGSPATIAL 2026 Student Travel Grant</b><span>NSF-funded · for the SRC presentation</span></li>
+            <li><b>CRA REU Travel Grant</b><span>NSF-funded · SIGSPATIAL 2026</span></li>
+            <li><b>Jeannette Rankin Scholar</b><span>Rankin Foundation · 2026–27</span></li>
+            <li><b>Saccomanno Scholarship</b><span>2026–27</span></li>
+            <li><b>ACM student member</b><span>SIGAI · SIGSPATIAL</span></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="page-section projects-section section-pad" id="projects">
+      <div class="big-pixel-star big-pixel-star--one"></div>
+      <div class="big-pixel-star big-pixel-star--two"></div>
+      <div class="big-pixel-star big-pixel-star--three"></div>
+      <div class="big-pixel-star big-pixel-star--four"></div>
+
+      <div class="projects-header">
+        <div>
+          <p class="section-label projects-label reveal">Projects</p>
+          <h2 class="section-heading reveal">Things I've <span>built</span></h2>
+        </div>
+        <a class="projects-view-all reveal" href="https://github.com/darcy0408?tab=repositories" target="_blank" rel="noopener">View all on GitHub →</a>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-window"><span>–</span><span>□</span><span>×</span></div>
+          <div class="project-card-image project-card-image--shot">
+            <img src="assets/projects/ouyc.webp" width="960" height="420" loading="lazy"
+                 alt="Three screens from Once Upon YOUR Child: the title screen, a character picker, and an age picker" />
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Once Upon YOUR Child</h3>
+            <p class="project-card-description">
+              Personalized AI storytelling app for kids' social-emotional learning, designed and built
+              under my own LLC. Flask/PostgreSQL API with JWT auth, rate limiting, and caching; Celery workers over Redis;
+              Flutter web client; Docker image through CI/CD with a rollback path.
+            </p>
+            <ul class="project-card-stack clean-list">
+              <li class="project-card-pill">Python</li><li class="project-card-pill">Flask</li><li class="project-card-pill">PostgreSQL</li><li class="project-card-pill">Celery</li><li class="project-card-pill">Flutter</li><li class="project-card-pill">Docker</li>
+            </ul>
+            <div class="project-card-actions">
+              <a class="project-card-demo" href="https://onceuponyourchild.app" target="_blank" rel="noopener">Live app ↗</a>
+              <a class="project-card-github" href="https://github.com/darcy0408/once-upon-your-child" target="_blank" rel="noopener" aria-label="GH: Once Upon YOUR Child on GitHub">GH</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-window"><span>–</span><span>□</span><span>×</span></div>
+          <div class="project-card-image project-card-image--shot">
+            <img src="assets/projects/traffic-abm.webp" width="960" height="420" loading="lazy"
+                 alt="Map of modeled NO2 across the Portland metro street network, brightest along freeways and arterials" />
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Portland Traffic ABM</h3>
+            <p class="project-card-description">
+              Agent-based traffic simulation over Portland's street network with car-following, signal queueing, and
+              shortest-path rerouting, producing per-segment NO<sub>2</sub> and noise surfaces. Checked against held-out counts;
+              multi-seed runs on a Slurm cluster. NSF REU at Portland State.
+            </p>
+            <ul class="project-card-stack clean-list">
+              <li class="project-card-pill">Python</li><li class="project-card-pill">NetworkX</li><li class="project-card-pill">OSMnx</li><li class="project-card-pill">scikit-learn</li><li class="project-card-pill">Slurm</li>
+            </ul>
+            <div class="project-card-actions">
+              <a class="project-card-demo" href="https://github.com/darcy0408/portland-traffic-abm#readme" target="_blank" rel="noopener">Read more ↗</a>
+              <a class="project-card-github" href="https://github.com/darcy0408/portland-traffic-abm" target="_blank" rel="noopener" aria-label="GH: Portland Traffic ABM on GitHub">GH</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-window"><span>–</span><span>□</span><span>×</span></div>
+          <div class="project-card-image project-card-image--shot">
+            <img src="assets/projects/runwild.webp" width="960" height="420" loading="lazy"
+                 alt="RunWild dashboard recommending the best window to run tomorrow, scored 95 out of 100" />
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">RunWild</h3>
+            <p class="project-card-description">
+              Should I run outside? A running advisor that fans out to weather, air-quality, and severe-weather APIs
+              with structured concurrency, models results as records and sealed interfaces, and scores every hour
+              against your own tolerances. An entry in Hackster's "Modern Java in the Wild" 2026.
+            </p>
+            <ul class="project-card-stack clean-list">
+              <li class="project-card-pill">Java 26</li><li class="project-card-pill">HTTP/3</li><li class="project-card-pill">JUnit 5</li><li class="project-card-pill">Records</li>
+            </ul>
+            <div class="project-card-actions">
+              <a class="project-card-demo" href="https://github.com/darcy0408/runwild-java26#readme" target="_blank" rel="noopener">Read more ↗</a>
+              <a class="project-card-github" href="https://github.com/darcy0408/runwild-java26" target="_blank" rel="noopener" aria-label="GH: RunWild on GitHub">GH</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-window"><span>–</span><span>□</span><span>×</span></div>
+          <div class="project-card-image">
+            <div class="project-stat"><b>iOS</b><span>React Native · Expo</span></div>
+            <div class="project-stat"><b>0</b><span>secrets on device</span></div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">SoundingBoard</h3>
+            <p class="project-card-description">
+              iOS app for practicing difficult conversations with an AI persona that pushes back realistically and
+              scores your approach. A Hono API on Cloudflare Workers isolates every secret and enforces rate limits.
+            </p>
+            <ul class="project-card-stack clean-list">
+              <li class="project-card-pill">TypeScript</li><li class="project-card-pill">React Native</li><li class="project-card-pill">Expo</li><li class="project-card-pill">Cloudflare Workers</li><li class="project-card-pill">Hono</li>
+            </ul>
+            <div class="project-card-actions">
+              <a class="project-card-demo" href="https://github.com/darcy0408/soundingboard#readme" target="_blank" rel="noopener">Read more ↗</a>
+              <a class="project-card-github" href="https://github.com/darcy0408/soundingboard" target="_blank" rel="noopener" aria-label="GH: SoundingBoard on GitHub">GH</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-window"><span>–</span><span>□</span><span>×</span></div>
+          <div class="project-card-image">
+            <div class="project-stat"><b>MCP</b><span>official TypeScript SDK</span></div>
+            <div class="project-stat"><b>Alexa+</b><span>bedtime stories</span></div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Once Upon YOUR Child MCP</h3>
+            <p class="project-card-description">
+              A Model Context Protocol server that lets Alexa+ tell personalized, feelings-aware bedtime stories
+              from Once Upon YOUR Child. Exposes the story engine to an LLM agent as typed tools.
+            </p>
+            <ul class="project-card-stack clean-list">
+              <li class="project-card-pill">TypeScript</li><li class="project-card-pill">Node</li><li class="project-card-pill">MCP</li><li class="project-card-pill">Alexa+</li>
+            </ul>
+            <div class="project-card-actions">
+              <a class="project-card-demo" href="https://github.com/darcy0408/once-upon-your-child-mcp#readme" target="_blank" rel="noopener">Read more ↗</a>
+              <a class="project-card-github" href="https://github.com/darcy0408/once-upon-your-child-mcp" target="_blank" rel="noopener" aria-label="GH: Once Upon YOUR Child MCP on GitHub">GH</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-window"><span>–</span><span>□</span><span>×</span></div>
+          <div class="project-card-image project-card-image--shot">
+            <img src="assets/projects/recipe-healthifier.webp" width="960" height="420" loading="lazy"
+                 alt="Illustration of a recipe notebook with arrows swapping ingredients for healthier ones" />
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Recipe Healthifier</h3>
+            <p class="project-card-description">
+              Java 26 CLI and web tool that healthifies any recipe with explainable ingredient swaps and a local
+              recipe library. Zero runtime dependencies, a JUnit 5 suite, and GitHub Actions CI.
+            </p>
+            <ul class="project-card-stack clean-list">
+              <li class="project-card-pill">Java 26</li><li class="project-card-pill">JUnit 5</li><li class="project-card-pill">GitHub Actions</li>
+            </ul>
+            <div class="project-card-actions">
+              <a class="project-card-demo" href="https://github.com/darcy0408/java-recipe-healthifier#readme" target="_blank" rel="noopener">Read more ↗</a>
+              <a class="project-card-github" href="https://github.com/darcy0408/java-recipe-healthifier" target="_blank" rel="noopener" aria-label="GH: Recipe Healthifier on GitHub">GH</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects-more reveal">
+        <span class="pixel-cat pixel-cat--more" data-cat aria-hidden="true"></span>
+        <p class="projects-more-label">More on GitHub</p>
+        <ul class="projects-more-list clean-list">
+          <li><a href="https://github.com/darcy0408/formwild" target="_blank" rel="noopener">FormWild</a> · Java 26 squat coach that watches your webcam and names the fault on the rep it happened</li>
+          <li><a href="https://github.com/darcy0408/saha-yoga-coach" target="_blank" rel="noopener">Saha Yoga Coach</a> · privacy-first, confidence-aware yoga coach in Java 26 and JavaFX</li>
+          <li><a href="https://github.com/darcy0408/wildfire-evacuation-abm" target="_blank" rel="noopener">Wildfire Evacuation ABM</a> · NetLogo model comparing simultaneous vs. staggered departures to minimize smoke exposure</li>
+          <li><a href="https://github.com/darcy0408/misinformation-dynamics-model" target="_blank" rel="noopener">Misinformation Dynamics</a> · Python model of when a rumor settles, oscillates, or can be reversed by debunking</li>
+          <li><a href="https://github.com/darcy0408/portland-traveltime-log" target="_blank" rel="noopener">Portland Travel-Time Log</a> · GitHub Actions cron logging hourly travel times to grade the ABM's pre-registered predictions</li>
+          <li><a href="https://github.com/darcy0408/claude-code-skills" target="_blank" rel="noopener">claude-code-skills</a> · developer tooling for Claude Code, including a session-recovery skill</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== RESEARCH ===================== -->
+    <section class="page-section research-section section-pad" id="research">
+      <p class="section-label reveal">Research</p>
+      <h2 class="section-heading reveal">Close a street, and <span>the pollution moves</span></h2>
+      <nav class="research-links reveal" aria-label="Research links">
+        <a href="#publications">Paper: accepted, DOI pending</a>
+        <a href="https://github.com/darcy0408/portland-traffic-abm" target="_blank" rel="noopener">Code on GitHub ↗</a>
+        <a href="https://pdxscholar.library.pdx.edu/altreu_projects/19/" target="_blank" rel="noopener">Chapter on PDXScholar ↗</a>
+        <a href="https://darcy0408.github.io/portland-traffic-abm/rosequarter/" target="_blank" rel="noopener">Preregistration ↗</a>
+      </nav>
+
+      <div class="finding split">
+        <figure class="finding-figure reveal">
+          <img src="assets/closure-diff.webp" width="820" height="814" loading="lazy"
+               alt="Street map of southeast Portland. The closed section of SE Powell is yellow. Powell is blue where its NO2 fell. Parallel streets to the north and south are red where their NO2 rose." />
+          <figcaption>
+            <span class="legend"><i class="swatch swatch--closed"></i>closed section</span>
+            <span class="legend"><i class="swatch swatch--down"></i><span>NO<sub>2</sub> fell</span></span>
+            <span class="legend"><i class="swatch swatch--up"></i><span>NO<sub>2</sub> rose</span></span>
+            <span class="finding-caption">Modeled change in NO<sub>2</sub> when a section of SE Powell closes. Powell-corridor network, one representative run.</span>
+          </figcaption>
+        </figure>
+
+        <div class="finding-text">
+          <p class="finding-stat reveal"><b>61–76%</b><span>average NO<sub>2</sub> drop on a closed arterial, across three arterials and 12 random seeds</span></p>
+          <p class="finding-stat reveal"><b>12/12</b><span>seeds where NO<sub>2</sub> rose on both parallel detours when SE Powell closed</span></p>
+          <p class="finding-body reveal">
+            The traffic doesn't disappear when a street closes. It reroutes, and the pollution goes with it.
+            In the model, SE Division and SE Holgate picked up about 32 and 42 percent more NO<sub>2</sub> on
+            average. That's the kind of thing a transportation planner wants to know before the lane closes
+            rather than after.
+          </p>
+          <p class="finding-body reveal">
+            A static land-use model cannot show this: its inputs do not change when a road closes, so it
+            predicts zero change on every segment. The comparison is model against model, because Portland
+            has no dense sensor network to check either one against.
+          </p>
+        </div>
+      </div>
+
+      <div class="pubs split" id="publications">
+        <div class="pubs-col reveal">
+          <p class="pubs-label">Publications</p>
+          <ol class="pubs-list clean-list">
+            <li>
+              <b>Van Pelt, D.</b> "Source-Based Interaction Modeling Captures Traffic Pollution Redistribution That
+              Static Estimation Cannot." <i>ACM SIGSPATIAL 2026 Student Research Competition</i>, Riverside, CA,
+              Nov 2026. <span class="pub-tag">Accepted · advised by Dr. Christof Teuscher</span>
+            </li>
+            <li>
+              <b>Van Pelt, D.</b>, Anderson, N., &amp; Teuscher, C. "When Roads Close, Pollution Moves: Agent-Based
+              Modeling of Street-Level NO<sub>2</sub> and Noise Redistribution in Portland." Chapter in
+              <i>Summer Proceedings 2026</i>, Portland State University NSF REU, pp. 317–337.
+              <a href="https://pdxscholar.library.pdx.edu/altreu_projects/19/" target="_blank" rel="noopener">PDXScholar ↗</a>
+            </li>
+          </ol>
+        </div>
+        <div class="pubs-col reveal">
+          <p class="pubs-label">Talks &amp; open science</p>
+          <ul class="pubs-list pubs-links clean-list">
+            <li>Poster and 10-minute talk, ACM SIGSPATIAL 2026 Student Research Competition, Riverside CA, Nov 2026</li>
+            <li>Ignite talk, PSU REU research symposium, summer 2026</li>
+            <li><a href="https://darcy0408.github.io/portland-traffic-abm/rosequarter/" target="_blank" rel="noopener">I-5 Rose Quarter preregistration ↗</a></li>
+            <li><a href="https://github.com/darcy0408/portland-traffic-abm" target="_blank" rel="noopener">Model source code ↗</a></li>
+            <li><a href="https://github.com/darcy0408/portland-traveltime-log" target="_blank" rel="noopener">Travel-time log that grades the predictions ↗</a></li>
+            <li><a href="https://orcid.org/0009-0002-7750-4277" target="_blank" rel="noopener">ORCID 0009-0002-7750-4277 ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="page-section skills-section split section-pad" id="skills">
+      <div class="skills-left center-column">
+        <p class="section-label reveal">Skills</p>
+        <h2 class="section-heading reveal">What I <span>work with</span></h2>
+        <p class="skills-description reveal">
+          Production backends, typed front ends, and research code that has to be reproducible.
+          I care about tests that run in CI, deploys that can be rolled back, and numbers I can
+          stand behind.
+        </p>
+        <div class="skills-exploring reveal">
+          <span>Exploring</span>
+          <p>Computational neuroscience and EEG signal processing, where modeling and signal work meet a problem I care about.</p>
+        </div>
+      </div>
+
+      <div class="skills-right center-column">
+        <div class="skills-window reveal">
+          <div class="skills-window-titlebar">
+            <div class="skills-window-tabs" role="tablist" aria-label="Skill categories">
+              <button class="skills-tab" role="tab" id="tab-tech" aria-controls="panel-tech" aria-selected="true" data-active="true">technical.json</button>
+              <button class="skills-tab" role="tab" id="tab-practice" aria-controls="panel-practice" aria-selected="false" data-active="false">practice.md</button>
+              <button class="skills-tab" role="tab" id="tab-research" aria-controls="panel-research" aria-selected="false" data-active="false">research.py</button>
+            </div>
+            <div class="skills-window-controls" aria-hidden="true">– □ ×</div>
+          </div>
+
+          <div class="skills-window-body">
+            <div class="skills-panel" id="panel-tech" role="tabpanel" aria-labelledby="tab-tech">
+              <div class="skills-category">
+                <p class="skills-category-label">Languages</p>
+                <ul class="skills-pills clean-list">
+                  <li>Java</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>Dart</li>
+                </ul>
+              </div>
+              <div class="skills-category">
+                <p class="skills-category-label">Web &amp; backend</p>
+                <ul class="skills-pills clean-list">
+                  <li>REST API design</li><li>Flask</li><li>PostgreSQL</li><li>Redis / Celery</li><li>Cloudflare Workers</li><li>Hono</li><li>React Native</li><li>Flutter</li><li>JWT auth</li>
+                </ul>
+              </div>
+              <div class="skills-category">
+                <p class="skills-category-label">Tooling &amp; delivery</p>
+                <ul class="skills-pills clean-list">
+                  <li>Git / GitHub</li><li>GitHub Actions CI/CD</li><li>Docker</li><li>Linux</li><li>JUnit 5</li><li>pytest</li><li>Vitest</li><li>Sentry</li><li>MCP servers</li>
+                </ul>
+              </div>
+              <div class="skills-category">
+                <p class="skills-category-label">CS foundations</p>
+                <ul class="skills-pills clean-list">
+                  <li>Data structures</li><li>Graph algorithms</li><li>Concurrency</li><li>Records &amp; sealed interfaces</li><li>Modular design</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skills-panel" id="panel-practice" role="tabpanel" aria-labelledby="tab-practice" hidden>
+              <div class="skills-soft-item">
+                <div class="skills-icon" aria-hidden="true">⇄</div>
+                <div class="skills-soft-content">
+                  <h3>Small changes, reviewed</h3>
+                  <p>Every change starts as a tracked ticket, goes through a pull request, and deploys with a rollback path.</p>
+                </div>
+              </div>
+              <div class="skills-soft-item">
+                <div class="skills-icon" aria-hidden="true">✓</div>
+                <div class="skills-soft-content">
+                  <h3>Own reliability</h3>
+                  <p>Tracing, health endpoints, queue-backlog alerts, backups to object storage, and an automated restore drill that checks row counts.</p>
+                </div>
+              </div>
+              <div class="skills-soft-item">
+                <div class="skills-icon" aria-hidden="true">◎</div>
+                <div class="skills-soft-content">
+                  <h3>Product, not just code</h3>
+                  <p>A market-validation study, a rebrand after finding naming collisions, and copy rewritten to clear state statutes and App Store guidelines.</p>
+                </div>
+              </div>
+              <div class="skills-soft-item">
+                <div class="skills-icon" aria-hidden="true">✎</div>
+                <div class="skills-soft-content">
+                  <h3>Write it down</h3>
+                  <p>A SIGSPATIAL paper, an REU proceedings chapter, Ignite talk at the PSU research symposium, and READMEs that explain the one rule the structure enforces.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-panel" id="panel-research" role="tabpanel" aria-labelledby="tab-research" hidden>
+              <div class="skills-category">
+                <p class="skills-category-label">Modeling &amp; simulation</p>
+                <ul class="skills-pills clean-list">
+                  <li>Agent-based models</li><li>NetworkX / OSMnx</li><li>NetLogo</li><li>Shortest-path routing</li><li>Random walks</li>
+                </ul>
+              </div>
+              <div class="skills-category">
+                <p class="skills-category-label">Data &amp; ML</p>
+                <ul class="skills-pills clean-list">
+                  <li>NumPy</li><li>scikit-learn</li><li>Random forests</li><li>Feedforward nets (SGD)</li><li>Validation against held-out data</li>
+                </ul>
+              </div>
+              <div class="skills-category">
+                <p class="skills-category-label">Compute</p>
+                <ul class="skills-pills clean-list">
+                  <li>Slurm clusters</li><li>Checkpoint / resume</li><li>Multi-seed experiments</li><li>CI test benches</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="page-section contact-section split section-pad" id="contact">
+      <div class="contact-left center-column">
+        <p class="section-label reveal">Contact</p>
+        <h2 class="section-heading reveal">Let's <span>build</span> something</h2>
+        <p class="contact-blurb reveal">
+          Happy to talk about research collaborations, internships, and interesting problems.
+          Send a message below, or email me directly at
+          <a href="mailto:darcy0408@gmail.com">darcy0408@gmail.com</a>.
+        </p>
+        <ul class="contact-facts clean-list reveal">
+          <li><b>Work authorization</b> Authorized to work in the U.S. without sponsorship</li>
+          <li><b>Location</b> Grand Junction, CO · open to remote</li>
+        </ul>
+
+        <!-- To deliver messages to your inbox, create a free form at formspree.io and paste its endpoint
+             (https://formspree.io/f/xxxxxxx) into data-endpoint. Left empty, the form opens the visitor's mail app. -->
+        <form class="contact-form reveal" id="contact-form" data-endpoint="" novalidate>
+          <div class="contact-field-row">
+            <div class="contact-field">
+              <label for="cf-name">NAME</label>
+              <input id="cf-name" name="name" type="text" placeholder="Ada Lovelace" autocomplete="name" required />
+            </div>
+            <div class="contact-field">
+              <label for="cf-email">EMAIL</label>
+              <input id="cf-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="cf-message">MESSAGE</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Hi Darcy, ..." required></textarea>
+          </div>
+          <p class="contact-status" id="contact-status" hidden></p>
+          <button class="contact-submit" type="submit">SEND MESSAGE →</button>
+        </form>
+      </div>
+
+      <div class="contact-right center-box reveal" aria-hidden="true">
+        <div class="terminal contact-terminal">
+          <div class="terminal-titlebar"><span>inbox</span><span class="terminal-controls">– □ ×</span></div>
+          <pre class="terminal-body"><span class="t-prompt">$</span> mail -s "hello" darcy0408@gmail.com
+<span class="t-out">Connecting...</span>
+<span class="t-ok">Ready.</span> <span class="t-out">Messages go straight to Darcy.</span>
+<span class="t-out">The cat is guarding the inbox. =^..^=</span>
+<span class="t-prompt">$</span> <span class="typing-cursor"></span></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer-root">
+    <div class="footer-grid-bg" aria-hidden="true"></div>
+    <div class="cat-walk" aria-hidden="true"><span class="pixel-cat pixel-cat--walker" data-cat></span></div>
+    <div class="footer-inner">
+      <div class="footer-stats-col">
+        <p class="footer-section-label">At a glance</p>
+        <div class="footer-stats">
+          <div class="footer-stat"><span class="footer-stat-value">159k</span><span class="footer-stat-label">street-graph edges
+simulated</span></div>
+          <div class="footer-stat"><span class="footer-stat-value">61–76%</span><span class="footer-stat-label">NO<sub>2</sub> drop on a
+closed arterial</span></div>
+          <div class="footer-stat"><span class="footer-stat-value">2</span><span class="footer-stat-label">papers in 2026: chapter
+published, abstract accepted</span></div>
+          <div class="footer-stat"><span class="footer-stat-value">3.97</span><span class="footer-stat-label">GPA
+CS · AI &amp; Robotics</span></div>
+        </div>
+      </div>
+      <div class="footer-contact-col">
+        <p class="footer-section-label">Elsewhere</p>
+        <div class="footer-terminal cat-perch">
+          <span class="pixel-cat pixel-cat--footer" data-cat aria-hidden="true"></span>
+          <div class="footer-terminal-titlebar"><span>links.sh</span><span class="footer-terminal-controls">– □ ×</span></div>
+          <div class="footer-terminal-body">
+            <p><span class="t-prompt">$</span> <a class="footer-terminal-cta" href="https://github.com/darcy0408" target="_blank" rel="noopener">github.com/darcy0408</a></p>
+            <p><span class="t-prompt">$</span> <a class="footer-terminal-cta" href="https://www.linkedin.com/in/darcyvanpelt" target="_blank" rel="noopener">linkedin.com/in/darcyvanpelt</a></p>
+            <p><span class="t-prompt">$</span> <a class="footer-terminal-cta" href="mailto:darcy0408@gmail.com">darcy0408@gmail.com</a></p>
+            <p class="footer-terminal-prompt"><span>&gt;</span><span class="footer-terminal-cursor"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Darcy Van Pelt</p>
+      <p>Built with plain HTML, CSS, and JavaScript. No framework, no build step. <span class="footer-heart">♥</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2026-10-18" defer></script>
+</body>
+</html>
